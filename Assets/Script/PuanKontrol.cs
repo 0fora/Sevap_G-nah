@@ -15,8 +15,8 @@ public class PuanKontrol : MonoBehaviour
     // Butonlara bağlayacağımız metodlar
     public void YardimEt()
     {
-        sevap++;
-        toplam++;
+        sevap+=3;
+        toplam+=3;
         UpdateUI();
         CheckSonuc();
     }
@@ -31,8 +31,8 @@ public class PuanKontrol : MonoBehaviour
 
     public void IyilikYap()
     {
-        sevap++;
-        toplam++;
+        sevap+=2;
+        toplam+=2;
         UpdateUI();
         CheckSonuc();
     }
@@ -47,8 +47,8 @@ public class PuanKontrol : MonoBehaviour
 
     public void ZararVer()
     {
-        gunah++;
-        toplam--;
+        gunah+= 3;
+        toplam-= 3;
         UpdateUI();
         CheckSonuc();
     }
@@ -57,6 +57,27 @@ public class PuanKontrol : MonoBehaviour
     {
         gunah++;
         toplam--;
+        UpdateUI();
+        CheckSonuc();
+    }
+     public void ChpOyVer()
+    {
+        gunah+= 4;
+        toplam-= 4;
+        UpdateUI();
+        CheckSonuc();
+    }
+     public void TaşÇal()
+    {
+        gunah++;
+        toplam--;
+        UpdateUI();
+        CheckSonuc();
+    }
+     public void CamiSmack()
+    {
+        gunah+=2;
+        toplam-=2;
         UpdateUI();
         CheckSonuc();
     }
