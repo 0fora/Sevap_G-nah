@@ -69,11 +69,11 @@ public class PuanKontrol : MonoBehaviour
 
     void CheckSonuc()
     {
-        if (sevap >= 10)
+        if (toplam >= 10)
         {
             SceneManager.LoadScene("CennetScene");
         }
-        else if (gunah >= 10)
+        else if (toplam >= 10)
         {
             SceneManager.LoadScene("CehennemScene");
         }
