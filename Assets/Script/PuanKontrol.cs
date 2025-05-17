@@ -73,7 +73,7 @@ public class PuanKontrol : MonoBehaviour
         {
             SceneManager.LoadScene("CennetScene");
         }
-        else if (toplam >= 10)
+        else if (toplam <= -10)
         {
             SceneManager.LoadScene("CehennemScene");
         }
